@@ -1,19 +1,19 @@
-![BlinkX API](https://github.com/blinkX-demo/.github/blob/main/profile/banner.jpeg)
+![JM Pro API](https://github.com/blinkX-demo/.github/blob/main/profile/banner.jpeg)
 
 <div align="center">
 
-# BlinkX API
+# JM Pro API
   
 Build automated trading workflows with real-time order execution, live market feeds, and portfolio APIs.
 
-BlinkX API gives developers direct programmatic access to India's stock markets for executing your strategies across NSE and BSE.
+JM Pro API gives developers direct programmatic access to India's stock markets for executing your strategies across NSE and BSE.
 
 <br/>
 
-[![Python SDK](https://img.shields.io/badge/Python_SDK-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/DevBlinkX/PyBlinkXAPI)
-[![Java SDK](https://img.shields.io/badge/Java_SDK-E76F00?style=for-the-badge&logo=openjdk&logoColor=white)](https://github.com/DevBlinkX/JavaBlinkXAPI)
-[![Go SDK](https://img.shields.io/badge/Go_SDK-00ACD7?style=for-the-badge&logo=go&logoColor=white)](https://github.com/DevBlinkX/GoBlinkXAPI)
-[![Node.js SDK](https://img.shields.io/badge/Node.js_SDK-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://github.com/DevBlinkX/NodeJsBlinkXAPI)
+[![Python SDK](https://img.shields.io/badge/Python_SDK-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/DevJmpro/PyJmproAPI)
+[![Java SDK](https://img.shields.io/badge/Java_SDK-E76F00?style=for-the-badge&logo=openjdk&logoColor=white)](https://github.com/DevJmpro/JavaJmproAPI)
+[![Go SDK](https://img.shields.io/badge/Go_SDK-00ACD7?style=for-the-badge&logo=go&logoColor=white)](https://github.com/DevJmpro/GoJmproAPI)
+[![Node.js SDK](https://img.shields.io/badge/Node.js_SDK-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://github.com/DevJmpro/NodeJsJmproAPI)
 
 </div>
 
@@ -36,18 +36,18 @@ BlinkX API gives developers direct programmatic access to India's stock markets 
 **1. Sign up, Create your APP and get your API key**
 
 ```
-https://developer.blinkx.in/signup
+https://developer.jmproapp.com/signup
 ```
 
 **2. Install the SDK**
 
 ```bash
 # To install Python SDK
-pip install blinkx-python          
+pip install jmpro-python          
 # To install Node.js SDK
-npm install blinkx-nodejs          
+npm install jmpro-nodejs          
 # To install Go SDK
-go get github.com/blinkx/blinkx-go 
+go get github.com/jmpro/jmpro-go 
 # To install Java SDK
 
 ```
@@ -55,23 +55,23 @@ go get github.com/blinkx/blinkx-go
 **3. Place your first order**
 
 ```python
-# Authenticate with BlinkX API
-from pyblinkxapi import PyBlinkXAPI
+# Authenticate with JM Pro API
+from pyjmproapi import PyJmproAPI
 
-blinkx = PyBlinkXAPI(api_key="your_api_key")
-blinkx.set_access_token("your_access_token")
+jmpro = PyJmproAPI(api_key="your_api_key")
+jmpro.set_access_token("your_access_token")
 
 # Place an order in real-time
-blinkx.place_order(
-  variety=blinkx.VARIETY_REGULAR,
-  exchange=blinkx.EXCHANGE_BSE,
+jmpro.place_order(
+  variety=jmpro.VARIETY_REGULAR,
+  exchange=jmpro.EXCHANGE_BSE,
   tradingsymbol="INDEX",
-  transaction_type=blinkx.TRANSACTION_TYPE_BUY,
+  transaction_type=jmpro.TRANSACTION_TYPE_BUY,
   quantity=1,
-  product=blinkx.PRODUCT_CNC,
+  product=jmpro.PRODUCT_CNC,
   price=3000,
-  order_type=blinkx.ORDER_TYPE_MARKET,
-  validity=blinkx.VALIDITY_DAY)
+  order_type=jmpro.ORDER_TYPE_MARKET,
+  validity=jmpro.VALIDITY_DAY)
 
 # → { "order_id": "BX20260323001", "status": "PLACED" }
 ```
@@ -82,18 +82,18 @@ blinkx.place_order(
 
 | Repository | Language | Description |
 |---|---|---|
-| [blinkx-python](https://github.com/DevBlinkX/PyBlinkXAPI) | 🐍 Python | Official Python SDK |
-| [blinkx-java](https://github.com/DevBlinkX/JavaBlinkXAPI) | ☕ Java | Official Java SDK |
-| [blinkx-go](https://github.com/DevBlinkX/GoBlinkXAPI) | 🐹 Go | Official Go client |
-| [blinkx-nodejs](https://github.com/DevBlinkX/NodeJsBlinkXAPI) | 🟩 Node.js | Official Node.js SDK |
+| [jmpro-python](https://github.com/DevJmpro/PyJmproAPI) | 🐍 Python | Official Python SDK |
+| [jmpro-java](https://github.com/DevJmpro/JavaJmproAPI) | ☕ Java | Official Java SDK |
+| [jmpro-go](https://github.com/DevJmpro/GoJmproAPI) | 🐹 Go | Official Go client |
+| [jmpro-nodejs](https://github.com/DevJmpro/NodeJsJmproAPI) | 🟩 Node.js | Official Node.js SDK |
 
 ---
 
 ## 📚 Resources
 
-- 📖 &nbsp;[API Documentation](https://developer.blinkx.in/docs/)
-- 🔑 &nbsp;[Get Your API Key](https://developer.blinkx.in/signup)
-- 📧 &nbsp;[General Enquiries](https://blinkx.in/contact-us)
+- 📖 &nbsp;[API Documentation](https://developer.jmproapp.com/docs/)
+- 🔑 &nbsp;[Get Your API Key](https://developer.jmproapp.com/signup)
+- 📧 &nbsp;[General Enquiries](https://jmproapp.com/contact-us)
 
 ---
 
@@ -107,13 +107,13 @@ Auth                OAuth 2.0 (daily session)
 
 ---
 
-BlinkX API complies with all SEBI and exchange regulations for algorithmic trading in India.  
+JM Pro API complies with all SEBI and exchange regulations for algorithmic trading in India.  
 A **static IP address** is mandatory for all API integrations per NSE/BSE guidelines (effective August 2025).  
 
 ---
 
 <div align="center">
 
-**© 2026 BlinkX · Powered by JM Financial**  
+**© 2026 JM Pro · Powered by JM Financial**  
 
 </div>
