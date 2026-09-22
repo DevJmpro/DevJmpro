@@ -1,4 +1,4 @@
-![JM Pro API]([./banner.jpeg](https://github.com/DevJmpro/DevJmpro/blob/master/banner.jpg))
+![JM Pro API](./banner.jpg)
 
 <div align="center">
 
