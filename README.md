@@ -1,4 +1,4 @@
-![JM Pro API](https://github.com/blinkX-demo/.github/blob/main/profile/banner.jpeg)
+![JM Pro API](./banner.jpeg)
 
 <div align="center">
 
